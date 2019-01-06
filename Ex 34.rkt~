@@ -1,0 +1,9 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname |Ex 34|) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+; We use nstring to represent non-empty strings.
+; nstring -> 1String
+; Extracts the first character of the given nstring
+; given: "raivat", expect: "r"
+; given: "mac", expect: "m"
+(define (firstcharacter str) (string-ith str 0))
